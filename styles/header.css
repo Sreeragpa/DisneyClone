@@ -1,0 +1,145 @@
+@media(max-width:877px) {
+    .header-text {
+        display: none;
+    }
+
+    .header-main-nav {
+
+        transform: translateX(-50%);
+        left: 55%;
+
+    }
+
+    .section-2-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* @media(max-width:960px){
+    grid-template-columns: 1fr;
+} */
+@media(max-width:670px) {
+    .featured-ads-div {
+        grid-template-columns: 1fr;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: Noto Sans;
+    overflow-x: hidden;
+}
+
+.header-class {
+    display: flex;
+    height: 4rem;
+
+    /* background-color: blue; */
+}
+
+.header-main-nav {
+    display: flex;
+    /* background-color: rgb(255, 0, 0); */
+    height: 2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 14px;
+    column-gap: 2rem;
+    align-items: center;
+    position: relative;
+
+
+}
+
+.header-logo-img {
+    width: 5rem;
+}
+
+.header-text,
+.header-texth {
+    margin-top: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.header-drop {
+    display: flex;
+    flex-direction: column;
+    display: none;
+    /* JAVASCRIPT NEEDED */
+
+}
+
+.header-drop-text-div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header-drop-text-div p {
+    font-weight: 600;
+    font-size: large;
+    padding-left: 4rem;
+
+}
+
+.header-drop2 {
+    display: none;
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    /* top: -55; */
+    z-index: 1;
+    left: -1rem;
+    top: 3rem;
+    opacity: 0;
+    transition: opacity 2s;
+
+
+
+    /* display: none; */
+    /* JAVASCRIPT NEEDED */
+
+}
+
+.header-texth:hover .header-drop2 {
+    top: 60;
+}
+
+.header-texth:hover .header-text {
+    color: rgb(255, 0, 0);
+}
+
+.header-drop-text-div2 {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.header-drop-text-div2 p {
+    color: white;
+    font-weight: bold;
+    font-size: small;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+.parks:hover .header-drop2 {
+    display: flex;
+    opacity: 100;
+}
+
+
+
+.header-text2{
+    opacity: 0;
+    transition:opacity 10s;
+    /* transition: opacity 10s ease-out; */
+}
+
+.parks:hover .header-text2{
+    opacity: 1;
+}
